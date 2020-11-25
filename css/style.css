@@ -1031,7 +1031,7 @@ hr.separator {
     color: #fff;
     position: absolute;
     height: 100%;
-    right: 25px;
+    right: 20px;
     top: 50%;
     margin-top: -9px;
     transition: all 0.3s;
