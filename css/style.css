@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;400i;500;500i;600;600i;700;700i;800;800i;900;900i&display=swap");
 
 * {
   margin: 0;
@@ -29,10 +30,6 @@ body {
 
 .poppins-font {
   font-family: "Poppins", sans-serif;
-}
-
-.open-sans-font {
-  font-family: "Open Sans", sans-serif;
 }
 
 .karla-font {
@@ -556,7 +553,8 @@ hr.separator {
 
 /* Form */
 .contact .contactform input[type="text"],
-.contact .contactform input[type="email"] {
+.contact .contactform input[type="email"],
+.contact .contactform textarea {
   border: 1px solid #111;
   width: 100%;
   background: #252525;
@@ -566,20 +564,13 @@ hr.separator {
   border-radius: 6px;
   outline: none !important;
   transition: 0.3s;
+  font-family: "Karla", sans-serif;
 }
 
 .contact .contactform textarea {
-  border: 1px solid #111;
-  background: #252525;
-  color: #fff;
-  width: 100%;
-  padding: 10px 16px;
   margin-bottom: 20px;
   height: 200px;
   overflow: hidden;
-  border-radius: 6px;
-  outline: none !important;
-  transition: 0.3s;
 }
 
 .contact .contactform .form-message {
