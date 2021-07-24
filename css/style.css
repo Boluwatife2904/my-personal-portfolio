@@ -437,7 +437,6 @@ hr.separator {
 /*** Portfolio ***/
 .portfolio .main-content {
   padding-bottom: 60px;
-  margin-top: -15px;
 }
 
 .portfolio-item {
@@ -513,8 +512,8 @@ hr.separator {
 
 .contact .custom-span-contact i {
   left: 0;
-  top: 10px;
-  font-size: 33px;
+  top: 5px;
+  font-size: 40px;
 }
 
 .contact .custom-span-contact i.fa-phone-square {
@@ -525,6 +524,12 @@ hr.separator {
 .contact .custom-span-contact span {
   text-transform: uppercase;
   opacity: 0.8;
+  font-weight: 400;
+}
+
+.contact .custom-span-contact a {
+  color: #fff;
+  text-decoration: none;
   font-weight: 400;
 }
 
@@ -908,7 +913,6 @@ hr.separator {
 
   .portfolio .main-content {
     padding-bottom: 10px;
-    margin-top: -12px;
   }
 
   .portfolio .main-content > .container {
