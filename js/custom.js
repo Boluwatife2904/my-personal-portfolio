@@ -5,14 +5,6 @@
 	$(document).ready(function() {
 
 		/* ----------------------------------------------------------- */
-		/*  STOP VIDEOS
-        /* ----------------------------------------------------------- */
-
-		$('.slideshow nav span').on('click', function () {
-			stop_videos();
-		});
-
-		/* ----------------------------------------------------------- */
 		/*  FIX REVEALATOR ISSUE AFTER PAGE LOADED
         /* ----------------------------------------------------------- */
 
@@ -87,14 +79,10 @@
 		/*  KEYBOARD NAVIGATION IN PORTFOLIO SLIDESHOW
         /* ----------------------------------------------------------- */
 		if (e.keyCode === 27) {
-			stop_videos();
 			$('.close-content').click();
 			$("#navbar-collapse-toggle").removeClass('hide-header');
-		}
-		if ((e.keyCode === 37) || (e.keyCode === 39)) {
-			stop_videos();
 		}
 	});
 
 
-})(jQuery);
+})(jQuery);-

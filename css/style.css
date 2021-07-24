@@ -1,35 +1,5 @@
-/*------------------------------------------------------------------
-[Table of contents]
-	+ General
-	    - Miscellaneous
-		- Buttons
-		- Page Title
-	+ Header
-		- Desktop Navigation
-		- Mobile Navigation
-	+ Pages
-		- Homepage
-		+ About
-		    - Personal Info List
-			- Box Stats
-			- Resume
-			- Skills
-		+ Portfolio
-		    - Grid
-		    + Slideshow
-                - Embedded Videos
-                - Carousel
-                - Navigation
-        + Contact
-            - Left Side
-            - Contact Form
-	- Responsive Design Styles
--------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap");
 
-/* [ GENERAL ] */
-/*================================================== */
-
-/*** Miscellaneous ***/
 *{
   outline: none !important;
 }
@@ -37,6 +7,7 @@
 html {
   overflow-x: hidden;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -50,8 +21,9 @@ body {
   background-position: center;
   height: 100%;
   width: 100%;
-  background-color: #111;
+  background-color: #000;
 }
+
 
 .poppins-font {
   font-family: 'Poppins', sans-serif;
@@ -59,6 +31,10 @@ body {
 
 .open-sans-font {
   font-family: 'Open Sans', sans-serif;
+}
+
+.karla-font {
+  font-family: "Karla", sans-serif;
 }
 
 hr.separator {
@@ -112,7 +88,6 @@ hr.separator {
 }
 
 /*** Page Title ***/
-
 .title-section {
   margin: 0 auto;
   width: 100%;
@@ -148,9 +123,6 @@ hr.separator {
 
 /* [ HEADER ] */
 /*================================================== */
-
-/*** Desktop Navigation ***/
-
 @media (min-width: 992px) {
 
   /*** Navigation ***/
@@ -177,6 +149,7 @@ hr.separator {
   .header ul.icon-menu {
     margin: 0;
     padding: 0;
+    font-family: "Karla", sans-serif;
   }
 
   .header ul.icon-menu li.icon-box {
@@ -466,10 +439,26 @@ hr.separator {
 
 /* Skills */
 .about .technology-img img{
-  height: 70px;
+  height: 60px;
   margin: 0 auto;
   display: block;
 }
+
+.about .technology-img i{
+  color: #fff;
+  font-size: 100px;
+  display: block;
+  text-align: center;
+  transition: all .5s ease-in-out;
+}
+
+/* .about .technology-img .html-icon:hover{
+  color: #e34c26;
+}
+
+.about .technology-img .css-icon:hover{
+  color: #264de4;
+} */
 
 .about .c100 {
   float: none !important;
@@ -508,6 +497,7 @@ hr.separator {
   width: 100%;
   border-radius: 5px;
   transition: .3s;
+  object-fit: cover !important;
 }
 
 .portfolio .grid-wrap {
@@ -537,6 +527,7 @@ hr.separator {
 .portfolio .grid figure img {
   display: block;
   position: relative;
+  object-fit: cover;
 }
 
 .portfolio .grid li a {
@@ -673,40 +664,6 @@ hr.separator {
   font-size: 33px;
 }
 
-/* Embedded Videos */
-
-.portfolio .slideshow .videocontainer,
-.portfolio .slideshow .responsive-video {
-  max-width: 100%;
-  border-radius: 4px;
-  display: block;
-  object-fit: cover;
-}
-
-.portfolio .slideshow .videocontainer {
-  position: relative;
-  padding-bottom: 56.20%;
-  padding-top: 0;
-  height: 0;
-  max-width: 100%;
-  overflow: hidden;
-  width: 100%;
-  display: block;
-  margin: 0;
-  border-radius: 4px;
-}
-
-.portfolio .slideshow .videocontainer iframe,
-.portfolio .slideshow .videocontainer object,
-.portfolio .slideshow .videocontainer embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
 /* Carousel */
 
 .portfolio .slideshow .carousel-indicators {
@@ -819,7 +776,7 @@ hr.separator {
   color: #fff;
   padding: 11px 26px;
   margin-bottom: 30px;
-  border-radius: 30px;
+  border-radius: 6px;
   outline: none !important;
   transition: .3s;
 }
@@ -833,7 +790,7 @@ hr.separator {
   margin-bottom: 20px;
   height: 160px;
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 6px;
   outline: none !important;
   transition: .3s;
 }
@@ -848,7 +805,7 @@ hr.separator {
 
 
 
-/* [ RESPONSIVE DESIGN STYLES ] */
+/* MOBILE RESPONSIVENESS */
 
 @media (min-width: 1351px) {
   .portfolio .container-portfolio .grid {
@@ -893,7 +850,7 @@ hr.separator {
     color: #fff;
     position: absolute;
     height: 100%;
-    right: 20px;
+    right: 26px;
     top: 50%;
     margin-top: -9px;
     transition: all 0.3s;
@@ -954,7 +911,7 @@ hr.separator {
     padding: 25px;
   }
 
-  body.home .main-container {
+  body.home .main-contain {
     padding: 30px 0 !important;
   }
 
