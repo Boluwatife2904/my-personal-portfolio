@@ -37,7 +37,7 @@ body {
 
 hr.separator {
   border-top: 1px solid #252525;
-  margin: 70px auto 55px;
+  margin: 55px auto 35px;
   max-width: 40%;
 }
 
@@ -381,6 +381,8 @@ hr.separator {
   margin: 0;
   padding: 0;
   list-style: none;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .about .resume-box li {
@@ -429,10 +431,29 @@ hr.separator {
   margin: 7px 0 10px;
 }
 
+.about .resume-box .work-done,
 .about .resume-box p {
   margin: 0;
-  color: #eee;
+  color: #eeeeee;
+  font-weight: normal;
   font-size: 14px;
+  position: relative;
+}
+
+.about .resume-box .work-done {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.about .resume-box .work-done::before {
+  position: absolute;
+  content: "";
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #eee;
+  top: 8px;
+  left: -16px;
 }
 
 .about .resume-box .place {
