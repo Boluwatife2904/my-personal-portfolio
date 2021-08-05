@@ -319,61 +319,15 @@ hr.separator {
 }
 
 /* Personal Info List */
-
-.about .about-list li:not(:last-child) {
-  padding-bottom: 20px;
+.profile-text p {
+  font-weight: normal;
+  line-height: 30px;
+  color: #c2c2c2;
+  font-size: 16px;
 }
 
-.about .about-list .title {
-  opacity: 0.8;
-  text-transform: capitalize;
-}
-
-.about .about-list .value {
-  font-weight: 600;
-}
-
-/* Box Stats */
-
-.about .box-stats {
-  padding: 20px 30px 25px 40px;
-  border-radius: 5px;
-  border: 1px solid #252525;
-}
-
-.about .box-stats.with-margin {
-  margin-bottom: 30px;
-}
-
-.about .box-stats h3 {
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  font-size: 50px;
-  font-weight: 700;
-}
-
-.about .box-stats h3:after {
-  content: "+";
-  position: absolute;
-  right: -24px;
-  font-size: 33px;
-  font-weight: 300;
-  top: 2px;
-}
-
-.about .box-stats p {
-  padding-left: 45px;
-}
-
-.about .box-stats p:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 13px;
-  width: 30px;
-  height: 1px;
-  background: #777;
+.profile-text p span {
+  color: #ffffff;
 }
 
 /* Resume */
