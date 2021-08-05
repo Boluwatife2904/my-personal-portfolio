@@ -60,7 +60,6 @@ hr.separator {
 
 /* COLOR SCHEME */
 .home h1,
-.about .box-stats h3,
 .title-section h1 span,
 #menu li.active a,
 .contact .custom-span-contact i {
@@ -892,26 +891,6 @@ hr.separator {
 
   .about .resume-box h5 {
     font-size: 17px;
-  }
-
-  .about .box-stats {
-    padding: 15px 20px 20px 25px;
-  }
-
-  .about .box-stats.with-margin {
-    margin-bottom: 25px;
-  }
-
-  .about .box-stats h3 {
-    font-size: 40px;
-  }
-
-  .about .box-stats p {
-    padding-left: 0;
-  }
-
-  .about .box-stats p:before {
-    display: none;
   }
 
   .portfolio .main-content {
