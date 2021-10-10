@@ -61,8 +61,7 @@ hr.separator {
 /* COLOR SCHEME */
 .home h1,
 .title-section h1 span,
-#menu li.active a,
-.contact .custom-span-contact i {
+#menu li.active a {
   color: #6957af;
 }
 
