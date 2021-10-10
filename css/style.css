@@ -569,6 +569,7 @@ hr.separator {
 }
 
 .contact .contactform textarea {
+  resize: none;
   margin-bottom: 20px;
   height: 200px;
   overflow: hidden;
