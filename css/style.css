@@ -87,14 +87,14 @@ hr.separator {
 /* Buttons */
 .btn {
   box-shadow: none !important;
-  border-radius: 6px;
+  border-radius: 30px;
   font-weight: 500;
-  height: 46px;
-  line-height: 46px;
+  height: 52px;
+  line-height: 52px;
   font-size: 15px;
   text-transform: uppercase;
   color: #fff;
-  padding: 0 20px;
+  padding: 0 36px;
   outline: none !important;
   overflow: hidden;
   display: inline-block;
@@ -400,13 +400,9 @@ hr.separator {
 
 .about .resume-box .work-done::before {
   position: absolute;
-  content: "";
-  height: 6px;
-  width: 6px;
-  border-radius: 50%;
-  background-color: #eee;
-  top: 8px;
-  left: -16px;
+  content: "✍";
+  top: 0px;
+  left: -20px;
 }
 
 .about .resume-box .place {
