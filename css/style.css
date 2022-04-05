@@ -450,7 +450,7 @@ hr.separator {
 
 .portfolio-item:hover {
   background-color: #000;
-  border: 1px solid #fff;
+  border: 1px solid #6957af;
 }
 
 .portfolio-item .links {
@@ -491,7 +491,7 @@ hr.separator {
 
 .portfolio-item .stack li {
   margin-right: 10px;
-  color: #6957af;
+  color: #fff;
 }
 
 /*** Contact ***/
