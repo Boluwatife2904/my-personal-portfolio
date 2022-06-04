@@ -1,459 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Portfolio | Sanusi Victor Olajuwon | Frontend Software Engineer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#111111" />
-    <meta
-      name="description"
-      content="Portfolio | Frontend Software Engineer | Sanusi Victor Olajuwon"
-    />
-    <!-- OG Meta Tags -->
-    <meta property="og:title" content="Portfolio | Frontend Software Engineer | Sanusi Victor Olajuwon">
-    <meta property="og:site_name" content="Sanusi Victor Portfolio">
-    <meta property="og:url" content="https://sanusi-victor.netlify.app/portfolio">
-    <meta property="og:description" content="Checkout some of the awesome projects I have been able to work on featuring Vue, Nuxt, Firebase, Tailwind, SCSS etc">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://res.cloudinary.com/juwon-tech/image/upload/v1632046422/og-min_nhjkmp.jpg">
-    <!-- Font Awesome CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
-      crossorigin="anonymous"
-    />
+	<head>
+		<meta charset="utf-8" />
+		<title>Portfolio | Sanusi Victor Olajuwon | Frontend Software Engineer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#111111" />
+		<meta name="description" content="Portfolio | Frontend Software Engineer | Sanusi Victor Olajuwon" />
+		<!-- OG Meta Tags -->
+		<meta property="og:title" content="Portfolio | Frontend Software Engineer | Sanusi Victor Olajuwon" />
+		<meta property="og:site_name" content="Sanusi Victor Portfolio" />
+		<meta property="og:url" content="https://sanusi-victor.netlify.app/portfolio" />
+		<meta property="og:description" content="Checkout some of the awesome projects I have been able to work on featuring Vue, Nuxt, Firebase, Tailwind, SCSS etc" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="https://res.cloudinary.com/juwon-tech/image/upload/v1632046422/og-min_nhjkmp.jpg" />
+		<!-- Font Awesome CSS CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
 
-    <!-- Bootstrap CDN -->
-    <!-- <link
+		<!-- Bootstrap CDN -->
+		<!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     /> -->
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link href="css/preloader.min.css" rel="stylesheet" />
-    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+		<!-- CSS Files -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link href="css/preloader.min.css" rel="stylesheet" />
+		<link href="css/fm.revealator.jquery.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-50BBQ30Q27"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-50BBQ30Q27"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-      gtag('config', 'G-50BBQ30Q27');
-    </script>
-  </head>
+			gtag("config", "G-50BBQ30Q27");
+		</script>
+	</head>
 
-  <body class="portfolio">
-    <!-- Header Starts -->
-    <header class="header" id="navbar-collapse-toggle">
-      <!-- Fixed Navigation Starts -->
-      <ul
-        class="
-          icon-menu
-          d-none d-lg-block
-          revealator-slideup revealator-once revealator-delay1
-        "
-      >
-        <li class="icon-box">
-          <i class="fa fa-home"></i>
-          <a href="index.html">
-            <h2>Home</h2>
-          </a>
-        </li>
-        <li class="icon-box">
-          <i class="fa fa-user"></i>
-          <a href="about.html">
-            <h2>About</h2>
-          </a>
-        </li>
-        <li class="icon-box active">
-          <i class="fa fa-briefcase"></i>
-          <a href="portfolio.html">
-            <h2>Portfolio</h2>
-          </a>
-        </li>
-        <li class="icon-box">
-          <i class="fa fa-envelope-open"></i>
-          <a href="contact.html">
-            <h2>Contact</h2>
-          </a>
-        </li>
-      </ul>
-      <!-- Fixed Navigation Ends -->
-      <!-- Mobile Menu Starts -->
-      <nav role="navigation" class="d-block d-lg-none">
-        <div id="menuToggle">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-          <ul class="list-unstyled" id="menu">
-            <li>
-              <a href="index.html"
-                ><i class="fa fa-home"></i><span>Home</span></a
-              >
-            </li>
-            <li>
-              <a href="about.html"
-                ><i class="fa fa-user"></i><span>About</span></a
-              >
-            </li>
-            <li class="active">
-              <a href="portfolio.html"
-                ><i class="fa fa-folder-open"></i><span>Portfolio</span></a
-              >
-            </li>
-            <li>
-              <a href="contact.html"
-                ><i class="fa fa-envelope-open"></i><span>Contact</span></a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- Mobile Menu Ends -->
-    </header>
-    <!-- Header Ends -->
-    <!-- Page Title Starts -->
-    <section
-      class="
-        title-section
-        text-left text-sm-center
-        revealator-slideup revealator-once revealator-delay1
-      "
-    >
-      <h1>my <span>portfolio</span></h1>
-      <span class="title-bg">works</span>
-    </section>
-    <!-- Page Title Ends -->
-    <!-- Main Content Starts -->
-    <section
-      class="main-content revealator-slideup revealator-once revealator-delay1"
-    >
-      <div class="container">
-        <div class="row">
-          <!-- Roomshouse -->
-          <div class="col-lg-4 col-md-6">
-            <div class="portfolio-item">
-              <div class="links">
-                <a
-                  href="https://github.com/Boluwatife2904/vue-firebase-chat-app"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Github"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://roomshouse.vercel.app"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Preview"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
-              </div>
-              <div class="content">
-                <h4>Roomshouse</h4>
-                <p>
-                  A multi chatroom chat app in which people can create accounts,
-                  send to and receive messages from different logged in users as
-                  well in realtime.
-                </p>
-              </div>
-              <ul class="stack d-flex">
-                <li>Firebase</li>
-                <li>Vue</li>
-                <li>Vue-router</li>
-                <li>SCSS</li>
-              </ul>
-            </div>
-          </div>
-          <!-- FindAMovie -->
-          <div class="col-lg-4 col-md-6">
-            <div class="portfolio-item">
-              <div class="links">
-                <a
-                  href="https://github.com/Boluwatife2904/movies-app"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Github"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://findamovie.vercel.app"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Preview"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
-              </div>
-              <div class="content">
-                <h4>FindAMovie</h4>
-                <p>
-                  A web app where users can search for movies, get multiple
-                  results based on search team and view more details about the
-                  movie such as actors, genre, etc
-                </p>
-              </div>
-              <ul class="stack d-flex">
-                <li>Vue</li>
-                <li>Vuex</li>
-                <li>Vue-router</li>
-                <li>SCSS</li>
-              </ul>
-            </div>
-          </div>
-          <!-- Where in the World -->
-          <div class="col-lg-4 col-md-6">
-            <div class="portfolio-item">
-              <div class="links">
-                <a
-                  href="https://github.com/Boluwatife2904/rest-countries-api-challenge"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Github"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://find-my-country.vercel.app"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Preview"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
-              </div>
-              <div class="content">
-                <h4>Where in the world</h4>
-                <p>
-                  A web app that displays all the countries in the world, their
-                  population, continents, flags, border countries etc. Users can
-                  also filter countires by name and region.
-                </p>
-              </div>
-              <ul class="stack d-flex">
-                <li>Vue</li>
-                <li>Vuex</li>
-                <li>Vue-router</li>
-                <li>SCSS</li>
-              </ul>
-            </div>
-          </div>
-          <!-- URL Shortener -->
-          <div class="col-lg-4 col-md-6">
-            <div class="portfolio-item">
-              <div class="links">
-                <a
-                  href="https://github.com/Boluwatife2904/url-shortener-app"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Github"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://shorten-my-link.netlify.app"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Preview"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
-              </div>
-              <div class="content">
-                <h4>URL Shortener</h4>
-                <p>
-                  A web application which shortens a long url link into a more
-                  shortened link which users can copy to their clipboard which
-                  is also saved locally in the browser.
-                </p>
-              </div>
-              <ul class="stack d-flex">
-                <li>Vue</li>
-                <li>SCSS</li>
-                <li>HTML</li>
-              </ul>
-            </div>
-          </div>
-          <!-- Personal Portfolio -->
-          <div class="col-lg-4 col-md-6">
-            <div class="portfolio-item">
-              <div class="links">
-                <a
-                  href="https://github.com/Boluwatife2904/my-personal-portfolio"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Github"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://sanusi-victor.netlify.app"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Preview"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
-              </div>
-              <div class="content">
-                <h4>Personal Portfolio</h4>
-                <p>
-                  Here is my own personal portfolio, built with love. Here, you
-                  can find out more about me, what I do best and reach out to
-                  me if you'd love to work with me.
-                </p>
-              </div>
-              <ul class="stack d-flex">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>Javascript</li>
-              </ul>
-            </div>
-          </div>
-          <!-- Mini Blog -->
-          <div class="col-lg-4 col-md-6">
-            <div class="portfolio-item">
-              <div class="links">
-                <a
-                  href="https://github.com/Boluwatife2904/my-blog"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Github"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://vue-blog-iota.vercel.app"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Preview"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
-              </div>
-              <div class="content">
-                <h4>Mini Blog (WIP)</h4>
-                <p>
-                  A mini blog I built which I intend to make use of when I begin
-                  a career in technical writing.
-                </p>
-              </div>
-              <ul class="stack d-flex">
-                <li>Vue</li>
-                <li>Firebase</li>
-                <li>Vue-router</li>
-                <li>SCSS</li>
-                <li>HTML</li>
-              </ul>
-            </div>
-          </div>
-          <!-- IP Tracker -->
-          <div class="col-lg-4 col-md-6">
-            <div class="portfolio-item">
-              <div class="links">
-                <a
-                  href="https://github.com/Boluwatife2904/ip-tracker"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Github"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://ip-tracker-beta.vercel.app"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Preview"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
-              </div>
-              <div class="content">
-                <h4>IP Tracker</h4>
-                <p>
-                  A web app which users can use to track the location of a given
-                  IP address and the internet service provider as well and the
-                  location on the map.
-                </p>
-              </div>
-              <ul class="stack d-flex">
-                <li>Vue</li>
-                <li>Leaflet JS</li>
-                <li>SCSS</li>
-                <li>HTML</li>
-              </ul>
-            </div>
-          </div>
-          <!-- Tipster -->
-          <div class="col-lg-4 col-md-6">
-            <div class="portfolio-item">
-              <div class="links">
-                <a
-                  href="https://github.com/Boluwatife2904/tip-calculator"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Github"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://tip-calculator-gamma.vercel.app"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Preview"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
-              </div>
-              <div class="content">
-                <h4>Tipster</h4>
-                <p>
-                  A web app which users can use to calculate how much to tip a
-                  waiter at a restaurant.
-                </p>
-              </div>
-              <ul class="stack d-flex">
-                <li>Vue</li>
-                <li>SCSS</li>
-                <li>HTML</li>
-              </ul>
-            </div>
-          </div>
-          <!-- Todo List -->
-          <div class="col-lg-4 col-md-6">
-            <div class="portfolio-item">
-              <div class="links">
-                <a
-                  href="https://github.com/Boluwatife2904/vue-todo-app"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Github"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://todo-with-vue.netlify.app"
-                  target="_black"
-                  rel="no-opener no-referrer"
-                  title="Preview"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
-              </div>
-              <div class="content">
-                <h4>TodoList</h4>
-                <p>
-                  A todo app where users can create and delete new todos which
-                  are saved in the browser’s local storage upon reload.
-                </p>
-              </div>
-              <ul class="stack d-flex">
-                <li>Vue</li>
-                <li>SCSS</li>
-                <li>HTML</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Main Content Ends -->
+	<body class="portfolio">
+		<!-- Header Starts -->
+		<header class="header" id="navbar-collapse-toggle">
+			<!-- Fixed Navigation Starts -->
+			<ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+				<li class="icon-box">
+					<i class="fa fa-home"></i>
+					<a href="index.html">
+						<h2>Home</h2>
+					</a>
+				</li>
+				<li class="icon-box">
+					<i class="fa fa-user"></i>
+					<a href="about.html">
+						<h2>About</h2>
+					</a>
+				</li>
+				<li class="icon-box active">
+					<i class="fa fa-briefcase"></i>
+					<a href="portfolio.html">
+						<h2>Portfolio</h2>
+					</a>
+				</li>
+				<li class="icon-box">
+					<i class="fa fa-envelope-open"></i>
+					<a href="contact.html">
+						<h2>Contact</h2>
+					</a>
+				</li>
+			</ul>
+			<!-- Fixed Navigation Ends -->
+			<!-- Mobile Menu Starts -->
+			<nav role="navigation" class="d-block d-lg-none">
+				<div id="menuToggle">
+					<input type="checkbox" />
+					<span></span>
+					<span></span>
+					<span></span>
+					<ul class="list-unstyled" id="menu">
+						<li>
+							<a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+						</li>
+						<li>
+							<a href="about.html"><i class="fa fa-user"></i><span>About</span></a>
+						</li>
+						<li class="active">
+							<a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a>
+						</li>
+						<li>
+							<a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- Mobile Menu Ends -->
+		</header>
+		<!-- Header Ends -->
+		<!-- Page Title Starts -->
+		<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+			<h1>my <span>portfolio</span></h1>
+			<span class="title-bg">works</span>
+		</section>
+		<!-- Page Title Ends -->
+		<!-- Main Content Starts -->
+		<section class="main-content revealator-slideup revealator-once revealator-delay1">
+			<div class="container">
+				<div class="row">
+					<!-- Roomshouse -->
+					<div class="col-lg-4 col-md-6">
+						<div class="portfolio-item">
+							<div class="links">
+								<a href="https://github.com/Boluwatife2904/shoppe-ecommerce" target="_black" rel="no-opener no-referrer" title="Github"><i class="fab fa-github"></i></a>
+								<a href="https://shoppe-ecommerce.vercel.app" target="_black" rel="no-opener no-referrer" title="Preview"><i class="fas fa-external-link-alt"></i></a>
+							</div>
+							<div class="content">
+								<h4>Shoppe (WIP)</h4>
+								<p>A fully-fledged e-commerce platform with features like cart, checkout, wishlist where users can purchase jewellries of all kinds.</p>
+							</div>
+							<ul class="stack d-flex flex-wrap">
+								<li>Firebase</li>
+								<li>Vue</li>
+								<li>Typescript</li>
+								<li>Vite</li>
+								<li>Vue-Router</li>
+								<li>SCSS</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Roomshouse -->
+					<div class="col-lg-4 col-md-6">
+						<div class="portfolio-item">
+							<div class="links">
+								<a href="https://github.com/Boluwatife2904/vue-firebase-chat-app" target="_black" rel="no-opener no-referrer" title="Github"><i class="fab fa-github"></i></a>
+								<a href="https://roomshouse.vercel.app" target="_black" rel="no-opener no-referrer" title="Preview"><i class="fas fa-external-link-alt"></i></a>
+							</div>
+							<div class="content">
+								<h4>Roomshouse</h4>
+								<p>A multi chatroom chat app in which people can create accounts, send to and receive messages from different logged in users as well in realtime.</p>
+							</div>
+							<ul class="stack d-flex">
+								<li>Firebase</li>
+								<li>Vue</li>
+								<li>Vue-router</li>
+								<li>SCSS</li>
+							</ul>
+						</div>
+					</div>
+					<!-- FindAMovie -->
+					<div class="col-lg-4 col-md-6">
+						<div class="portfolio-item">
+							<div class="links">
+								<a href="https://github.com/Boluwatife2904/movies-app" target="_black" rel="no-opener no-referrer" title="Github"><i class="fab fa-github"></i></a>
+								<a href="https://findamovie.vercel.app" target="_black" rel="no-opener no-referrer" title="Preview"><i class="fas fa-external-link-alt"></i></a>
+							</div>
+							<div class="content">
+								<h4>FindAMovie</h4>
+								<p>A web app where users can search for movies, get multiple results based on search team and view more details about the movie such as actors, genre, etc</p>
+							</div>
+							<ul class="stack d-flex">
+								<li>Vue</li>
+								<li>Vuex</li>
+								<li>Vue-router</li>
+								<li>SCSS</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Where in the World -->
+					<div class="col-lg-4 col-md-6">
+						<div class="portfolio-item">
+							<div class="links">
+								<a href="https://github.com/Boluwatife2904/rest-countries-api-challenge" target="_black" rel="no-opener no-referrer" title="Github"><i class="fab fa-github"></i></a>
+								<a href="https://find-my-country.vercel.app" target="_black" rel="no-opener no-referrer" title="Preview"><i class="fas fa-external-link-alt"></i></a>
+							</div>
+							<div class="content">
+								<h4>Where in the world</h4>
+								<p>A web app that displays all the countries in the world, their population, continents, flags, border countries etc. Users can also filter countires by name and region.</p>
+							</div>
+							<ul class="stack d-flex">
+								<li>Vue</li>
+								<li>Vuex</li>
+								<li>SCSS</li>
+								<li>Vue-router</li>
+							</ul>
+						</div>
+					</div>
+					<!-- URL Shortener -->
+					<div class="col-lg-4 col-md-6">
+						<div class="portfolio-item">
+							<div class="links">
+								<a href="https://github.com/Boluwatife2904/url-shortener-app" target="_black" rel="no-opener no-referrer" title="Github"><i class="fab fa-github"></i></a>
+								<a href="https://shorten-my-link.netlify.app" target="_black" rel="no-opener no-referrer" title="Preview"><i class="fas fa-external-link-alt"></i></a>
+							</div>
+							<div class="content">
+								<h4>URL Shortener</h4>
+								<p>A web application which shortens a long url link into a more shortened link which users can copy to their clipboard which is also saved locally in the browser.</p>
+							</div>
+							<ul class="stack d-flex">
+								<li>Vue</li>
+								<li>SCSS</li>
+								<li>HTML</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Personal Portfolio -->
+					<div class="col-lg-4 col-md-6">
+						<div class="portfolio-item">
+							<div class="links">
+								<a href="https://github.com/Boluwatife2904/my-personal-portfolio" target="_black" rel="no-opener no-referrer" title="Github"><i class="fab fa-github"></i></a>
+								<a href="https://sanusi-victor.netlify.app" target="_black" rel="no-opener no-referrer" title="Preview"><i class="fas fa-external-link-alt"></i></a>
+							</div>
+							<div class="content">
+								<h4>Personal Portfolio</h4>
+								<p>Here is my own personal portfolio, built with love. Here, you can find out more about me, what I do best and reach out to me if you'd love to work with me.</p>
+							</div>
+							<ul class="stack d-flex">
+								<li>HTML</li>
+								<li>SCSS</li>
+								<li>Javascript</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Mini Blog -->
+					<div class="col-lg-4 col-md-6">
+						<div class="portfolio-item">
+							<div class="links">
+								<a href="https://github.com/Boluwatife2904/my-blog" target="_black" rel="no-opener no-referrer" title="Github"><i class="fab fa-github"></i></a>
+								<a href="https://vue-blog-iota.vercel.app" target="_black" rel="no-opener no-referrer" title="Preview"><i class="fas fa-external-link-alt"></i></a>
+							</div>
+							<div class="content">
+								<h4>Mini Blog (WIP)</h4>
+								<p>A mini blog I built which I intend to make use of when I begin a career in technical writing.</p>
+							</div>
+							<ul class="stack d-flex">
+								<li>Vue</li>
+								<li>Firebase</li>
+								<li>Vue-router</li>
+								<li>SCSS</li>
+								<li>HTML</li>
+							</ul>
+						</div>
+					</div>
+					<!-- IP Tracker -->
+					<div class="col-lg-4 col-md-6">
+						<div class="portfolio-item">
+							<div class="links">
+								<a href="https://github.com/Boluwatife2904/ip-tracker" target="_black" rel="no-opener no-referrer" title="Github"><i class="fab fa-github"></i></a>
+								<a href="https://ip-tracker-beta.vercel.app" target="_black" rel="no-opener no-referrer" title="Preview"><i class="fas fa-external-link-alt"></i></a>
+							</div>
+							<div class="content">
+								<h4>IP Tracker</h4>
+								<p>A web app which users can use to track the location of a given IP address and the internet service provider as well and the location on the map.</p>
+							</div>
+							<ul class="stack d-flex">
+								<li>Vue</li>
+								<li>Leaflet JS</li>
+								<li>SCSS</li>
+								<li>HTML</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Tipster -->
+					<div class="col-lg-4 col-md-6">
+						<div class="portfolio-item">
+							<div class="links">
+								<a href="https://github.com/Boluwatife2904/tip-calculator" target="_black" rel="no-opener no-referrer" title="Github"><i class="fab fa-github"></i></a>
+								<a href="https://tip-calculator-gamma.vercel.app" target="_black" rel="no-opener no-referrer" title="Preview"><i class="fas fa-external-link-alt"></i></a>
+							</div>
+							<div class="content">
+								<h4>Tipster</h4>
+								<p>A web app which users can use to calculate how much to tip a waiter at a restaurant.</p>
+							</div>
+							<ul class="stack d-flex">
+								<li>Vue</li>
+								<li>SCSS</li>
+								<li>HTML</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Todo List -->
+					<div class="col-lg-4 col-md-6">
+						<div class="portfolio-item">
+							<div class="links">
+								<a href="https://github.com/Boluwatife2904/vue-todo-app" target="_black" rel="no-opener no-referrer" title="Github"><i class="fab fa-github"></i></a>
+								<a href="https://todo-with-vue.netlify.app" target="_black" rel="no-opener no-referrer" title="Preview"><i class="fas fa-external-link-alt"></i></a>
+							</div>
+							<div class="content">
+								<h4>TodoList</h4>
+								<p>A todo app where users can create and delete new todos which are saved in the browser’s local storage upon reload.</p>
+							</div>
+							<ul class="stack d-flex">
+								<li>Vue</li>
+								<li>SCSS</li>
+								<li>HTML</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Main Content Ends -->
 
-    <!--  JS Files -->
-    <!-- <script
+		<!--  JS Files -->
+		<!-- <script
       src="https://code.jquery.com/jquery-3.5.0.min.js"
       integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
       crossorigin="anonymous"
@@ -468,11 +320,11 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script> -->
-    <script src="js/jquery-3.5.0.min.js"></script>
-    <script src="js/preloader.min.js"></script>
-    <script src="js/fm.revealator.jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/preloader.min.js"></script>
+		<script src="js/fm.revealator.jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
 </html>
