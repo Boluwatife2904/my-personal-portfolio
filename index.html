@@ -1,202 +1,121 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Home | Sanusi Victor Olajuwon | Frontend Software Engineer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#111111" />
-    <meta
-      name="description"
-      content="Frontend Software Engineer | Sanusi Victor Olajuwon"
-    />
-    <!-- OG Meta Tags -->
-    <meta property="og:title" content="Frontend Software Engineer | Sanusi Victor Olajuwon">
-    <meta property="og:site_name" content="Sanusi Victor Portfolio">
-    <meta property="og:url" content="https://sanusi-victor.netlify.app">
-    <meta property="og:description" content="I'm a Nigerian based Frontend Software Engineer focused on crafting clean & user‑friendly experiences. I am passionate about building and developing awesome products with a focus on great user experience. ">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://res.cloudinary.com/juwon-tech/image/upload/v1632046422/og-min_nhjkmp.jpg"> 
-    <!-- Font Awesome CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
-      crossorigin="anonymous"
-    />
+	<head>
+		<meta charset="utf-8" />
+		<title>Home | Sanusi Victor Olajuwon | Frontend Software Engineer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#111111" />
+		<meta name="description" content="Frontend Software Engineer | Sanusi Victor Olajuwon" />
+		<!-- OG Meta Tags -->
+		<meta property="og:title" content="Frontend Software Engineer | Sanusi Victor Olajuwon" />
+		<meta property="og:site_name" content="Sanusi Victor Portfolio" />
+		<meta property="og:url" content="https://sanusi-victor.netlify.app" />
+		<meta property="og:description" content="I'm a Nigerian based Frontend Software Engineer focused on crafting clean & user‑friendly experiences. I am passionate about building and developing awesome products with a focus on great user experience. " />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="https://res.cloudinary.com/juwon-tech/image/upload/v1632046422/og-min_nhjkmp.jpg" />
+		<!-- Font Awesome CSS CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
 
-    <!-- Bootstrap CDN -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    /> -->
+		<!--  CSS Files -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link href="css/preloader.min.css" rel="stylesheet" />
+		<link href="css/fm.revealator.jquery.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
 
-    <!--  CSS Files -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/preloader.min.css" rel="stylesheet" />
-    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-50BBQ30Q27"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-50BBQ30Q27"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+			gtag("config", "G-50BBQ30Q27");
+		</script>
+	</head>
 
-      gtag('config', 'G-50BBQ30Q27');
-    </script>
-  </head>
+	<body class="home">
+		<!-- Header Starts -->
+		<header class="header" id="navbar-collapse-toggle">
+			<!-- Fixed Navigation Starts -->
+			<ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+				<li class="icon-box active">
+					<i class="fa fa-home"></i>
+					<a href="index.html">
+						<h2>Home</h2>
+					</a>
+				</li>
+				<li class="icon-box">
+					<i class="fa fa-user"></i>
+					<a href="about.html">
+						<h2>About</h2>
+					</a>
+				</li>
+				<li class="icon-box">
+					<i class="fa fa-briefcase"></i>
+					<a href="portfolio.html">
+						<h2>Portfolio</h2>
+					</a>
+				</li>
+				<li class="icon-box">
+					<i class="fa fa-envelope-open"></i>
+					<a href="contact.html">
+						<h2>Contact</h2>
+					</a>
+				</li>
+			</ul>
+			<!-- Fixed Navigation Ends -->
+			<!-- Mobile Menu Starts -->
+			<nav role="navigation" class="d-block d-lg-none">
+				<div id="menuToggle">
+					<input type="checkbox" />
+					<span></span>
+					<span></span>
+					<span></span>
+					<ul class="list-unstyled" id="menu">
+						<li class="active">
+							<a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+						</li>
+						<li>
+							<a href="about.html"><i class="fa fa-user"></i><span>About</span></a>
+						</li>
+						<li>
+							<a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a>
+						</li>
+						<li>
+							<a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- Mobile Menu Ends -->
+		</header>
+		<!-- Header Ends -->
+		<!-- Main Content Starts -->
+		<section class="container-fluid main-contain container-home p-0 revealator-slideup revealator-once revealator-delay1">
+			<div class="color-block d-none d-lg-block"></div>
+			<div class="row home-details-container align-items-center">
+				<div class="col-lg-4 bg position-fixed d-none d-lg-block"></div>
+				<div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
+					<div>
+						<img src="img/IMG_3385.jpg" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture" loading="lazy" />
+						<h6 class="text-uppercase karla-font mb-0 d-block d-sm-none d-lg-block">hi there &#x1F44B; !</h6>
+						<h1 class="text-uppercase poppins-font"><span>I'm</span> sanusi victor</h1>
+						<p class="karla-font">I'm a Frontend Engineer with a keen eye for design and experience creating digital experiences on the web with full focus on user friendliness and beautiful user experiences.</p>
+						<a href="about.html" class="btn btn-about">Explore &rarr;</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Main Content Ends -->
 
-  <body class="home">
-    <!-- Header Starts -->
-    <header class="header" id="navbar-collapse-toggle">
-      <!-- Fixed Navigation Starts -->
-      <ul
-        class="
-          icon-menu
-          d-none d-lg-block
-          revealator-slideup revealator-once revealator-delay1
-        "
-      >
-        <li class="icon-box active">
-          <i class="fa fa-home"></i>
-          <a href="index.html">
-            <h2>Home</h2>
-          </a>
-        </li>
-        <li class="icon-box">
-          <i class="fa fa-user"></i>
-          <a href="about.html">
-            <h2>About</h2>
-          </a>
-        </li>
-        <li class="icon-box">
-          <i class="fa fa-briefcase"></i>
-          <a href="portfolio.html">
-            <h2>Portfolio</h2>
-          </a>
-        </li>
-        <li class="icon-box">
-          <i class="fa fa-envelope-open"></i>
-          <a href="contact.html">
-            <h2>Contact</h2>
-          </a>
-        </li>
-      </ul>
-      <!-- Fixed Navigation Ends -->
-      <!-- Mobile Menu Starts -->
-      <nav role="navigation" class="d-block d-lg-none">
-        <div id="menuToggle">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-          <ul class="list-unstyled" id="menu">
-            <li class="active">
-              <a href="index.html"
-                ><i class="fa fa-home"></i><span>Home</span></a
-              >
-            </li>
-            <li>
-              <a href="about.html"
-                ><i class="fa fa-user"></i><span>About</span></a
-              >
-            </li>
-            <li>
-              <a href="portfolio.html"
-                ><i class="fa fa-folder-open"></i><span>Portfolio</span></a
-              >
-            </li>
-            <li>
-              <a href="contact.html"
-                ><i class="fa fa-envelope-open"></i><span>Contact</span></a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- Mobile Menu Ends -->
-    </header>
-    <!-- Header Ends -->
-    <!-- Main Content Starts -->
-    <section
-      class="
-        container-fluid
-        main-contain
-        container-home
-        p-0
-        revealator-slideup revealator-once revealator-delay1
-      "
-    >
-      <div class="color-block d-none d-lg-block"></div>
-      <div class="row home-details-container align-items-center">
-        <div class="col-lg-4 bg position-fixed d-none d-lg-block"></div>
-        <div
-          class="
-            col-12 col-lg-8
-            offset-lg-4
-            home-details
-            text-left text-sm-center text-lg-left
-          "
-        >
-          <div>
-            <img
-              src="img/DSCN0077-110011.JPG"
-              class="img-fluid main-img-mobile d-none d-sm-block d-lg-none"
-              alt="my picture"
-              loading="lazy"
-            />
-            <h6
-              class="
-                text-uppercase
-                karla-font
-                mb-0
-                d-block d-sm-none d-lg-block
-              "
-            >
-              hi there &#x1F44B; !
-            </h6>
-            <h1 class="text-uppercase poppins-font">
-              <span>I'm</span> sanusi victor
-            </h1>
-            <p class="karla-font">
-              I'm a Nigerian based Frontend Software Engineer focused on
-              crafting clean & user‑friendly experiences. I am passionate about
-              building and developing awesome products with a focus on great
-              user experience.
-            </p>
-            <a href="about.html" class="btn btn-about">Explore &rarr;</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Main Content Ends -->
-
-    <!--  JS Files -->
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.5.0.min.js"
-      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script> -->
-    <script src="js/jquery-3.5.0.min.js"></script>
-    <script src="js/preloader.min.js"></script>
-    <script src="js/fm.revealator.jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/custom.js"></script>
-
-    
-  </body>
+		<!--  JS Files -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/preloader.min.js"></script>
+		<script src="js/fm.revealator.jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
 </html>

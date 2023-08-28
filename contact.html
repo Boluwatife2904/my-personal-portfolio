@@ -1,294 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Contact | Sanusi Victor Olajuwon | Frontend Software Engineer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#111111" />
-    <meta
-      name="description"
-      content="Get in Touch | Frontend Software Engineer | Sanusi Victor Olajuwon"
-    />
-    <!-- OG Meta Tags -->
-    <meta property="og:title" content="Get in Touch | Frontend Software Engineer | Sanusi Victor Olajuwon">
-    <meta property="og:site_name" content="Sanusi Victor Portfolio">
-    <meta property="og:url" content="https://sanusi-victor.netlify.app/contact">
-    <meta property="og:description" content="Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions. ">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://res.cloudinary.com/juwon-tech/image/upload/v1632046422/og-min_nhjkmp.jpg"> 
-    <!-- Font Awesome CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
-      crossorigin="anonymous"
-    />
+	<head>
+		<meta charset="utf-8" />
+		<title>Contact | Sanusi Victor Olajuwon | Frontend Software Engineer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#111111" />
+		<meta name="description" content="Get in Touch | Frontend Software Engineer | Sanusi Victor Olajuwon" />
+		<!-- OG Meta Tags -->
+		<meta property="og:title" content="Get in Touch | Frontend Software Engineer | Sanusi Victor Olajuwon" />
+		<meta property="og:site_name" content="Sanusi Victor Portfolio" />
+		<meta property="og:url" content="https://sanusi-victor.netlify.app/contact" />
+		<meta property="og:description" content="Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions. " />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="https://res.cloudinary.com/juwon-tech/image/upload/v1632046422/og-min_nhjkmp.jpg" />
+		<!-- Font Awesome CSS CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
 
-    <!-- Bootstrap CDN -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    /> -->
+		<!-- Boxicons CDN -->
+		<link href="https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css" rel="stylesheet" />
 
-    <!-- Boxicons CDN -->
-    <link
-      href="https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+		<!--  CSS Files -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link href="css/preloader.min.css" rel="stylesheet" />
+		<link href="css/fm.revealator.jquery.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
 
-    <!--  CSS Files -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/preloader.min.css" rel="stylesheet" />
-    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-50BBQ30Q27"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-50BBQ30Q27"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+			gtag("config", "G-50BBQ30Q27");
+		</script>
+	</head>
 
-      gtag('config', 'G-50BBQ30Q27');
-    </script>
-  </head>
+	<body class="contact">
+		<!-- Header Starts -->
+		<header class="header" id="navbar-collapse-toggle">
+			<!-- Fixed Navigation Starts -->
+			<ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+				<li class="icon-box">
+					<i class="fa fa-home"></i>
+					<a href="index.html">
+						<h2>Home</h2>
+					</a>
+				</li>
+				<li class="icon-box">
+					<i class="fa fa-user"></i>
+					<a href="about.html">
+						<h2>About</h2>
+					</a>
+				</li>
+				<li class="icon-box">
+					<i class="fa fa-briefcase"></i>
+					<a href="portfolio.html">
+						<h2>Portfolio</h2>
+					</a>
+				</li>
+				<li class="icon-box active">
+					<i class="fa fa-envelope-open"></i>
+					<a href="contact.html">
+						<h2>Contact</h2>
+					</a>
+				</li>
+			</ul>
+			<!-- Fixed Navigation Ends -->
+			<!-- Mobile Menu Starts -->
+			<nav role="navigation" class="d-block d-lg-none">
+				<div id="menuToggle">
+					<input type="checkbox" />
+					<span></span>
+					<span></span>
+					<span></span>
+					<ul class="list-unstyled" id="menu">
+						<li>
+							<a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
+						</li>
+						<li>
+							<a href="about.html"><i class="fa fa-user"></i><span>About</span></a>
+						</li>
+						<li>
+							<a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a>
+						</li>
+						<li class="active">
+							<a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- Mobile Menu Ends -->
+		</header>
+		<!-- Header Ends -->
+		<!-- Page Title Starts -->
+		<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+			<h1>get in <span>touch</span></h1>
+			<span class="title-bg">contact</span>
+		</section>
+		<!-- Page Title Ends -->
+		<!-- Main Content Starts -->
+		<section class="main-content revealator-slideup revealator-once revealator-delay1">
+			<div class="container">
+				<div class="row">
+					<!-- Left Side Starts -->
+					<div class="col-12 col-lg-4">
+						<h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Let's Discuss!</h3>
+						<p class="karla-font mb-3">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+						<p class="karla-font custom-span-contact position-relative">
+							<i class="bx bxs-envelope position-absolute"></i>
+							<span class="d-block">mail me</span><a href="mailto:sanvicola2000@gmail.com">sanvicola2000@gmail.com</a>
+						</p>
+						<p class="karla-font custom-span-contact position-relative">
+							<i class="bx bxs-phone position-absolute"></i>
+							<span class="d-block">call me</span><a href="tel:+2349131422492">+234 913 142 2492</a>
+						</p>
+						<ul class="social list-unstyled pt-1 mb-5">
+							<li class="facebook">
+								<a title="Facebook" href="https://www.facebook.com/victorolajuwon.sanusi.3" target="_blank"><i class="fab fa-facebook-f"></i></a>
+							</li>
+							<li class="twitter">
+								<a title="Twitter" href="https://twitter.com/developerBolu?s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+							</li>
+							<li class="linkedin">
+								<a title="Linkedin" href="https://www.linkedin.com/in/sanusi-victor-5267a819a" target="_blank"><i class="fab fa-linkedin"></i></a>
+							</li>
+							<li class="github">
+								<a title="Github" href="https://github.com/boluwatife2904" target="_blank"><i class="fab fa-github"></i></a>
+							</li>
+						</ul>
+					</div>
+					<!-- Left Side Ends -->
+					<!-- Contact Form Starts -->
+					<div class="col-12 col-lg-8">
+						<form class="contactform" name="contact" method="post" data-netlify="true" data-netlify-recaptcha="true">
+							<div class="contactform">
+								<div class="row">
+									<div class="col-12 col-md-4">
+										<label for="name">Your Name</label>
+										<input type="text" name="name" id="name" placeholder="How do I address you?" required />
+									</div>
+									<div class="col-12 col-md-4">
+										<label for="email">Your Email</label>
+										<input type="email" name="email" id="email" placeholder="How can I get in touch with you?" required />
+									</div>
+									<div class="col-12 col-md-4">
+										<label for="subject">Subject</label>
+										<input type="text" name="subject" id="subject" placeholder="What are we discussing about?" required />
+									</div>
+									<div class="col-12">
+										<label for="message">Your Message</label>
+										<textarea name="message" id="message" placeholder="Kindly provide more information about what You'd like me to help you with. Thanks." required></textarea>
+										<button type="submit" class="btn btn-contact">Get in Touch</button>
+										<div data-netlify-recaptcha="true" class="captcha-div"></div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- Contact Form Ends -->
+				</div>
+			</div>
+		</section>
 
-  <body class="contact">
-    <!-- Header Starts -->
-    <header class="header" id="navbar-collapse-toggle">
-      <!-- Fixed Navigation Starts -->
-      <ul
-        class="
-          icon-menu
-          d-none d-lg-block
-          revealator-slideup revealator-once revealator-delay1
-        "
-      >
-        <li class="icon-box">
-          <i class="fa fa-home"></i>
-          <a href="index.html">
-            <h2>Home</h2>
-          </a>
-        </li>
-        <li class="icon-box">
-          <i class="fa fa-user"></i>
-          <a href="about.html">
-            <h2>About</h2>
-          </a>
-        </li>
-        <li class="icon-box">
-          <i class="fa fa-briefcase"></i>
-          <a href="portfolio.html">
-            <h2>Portfolio</h2>
-          </a>
-        </li>
-        <li class="icon-box active">
-          <i class="fa fa-envelope-open"></i>
-          <a href="contact.html">
-            <h2>Contact</h2>
-          </a>
-        </li>
-      </ul>
-      <!-- Fixed Navigation Ends -->
-      <!-- Mobile Menu Starts -->
-      <nav role="navigation" class="d-block d-lg-none">
-        <div id="menuToggle">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-          <ul class="list-unstyled" id="menu">
-            <li>
-              <a href="index.html"
-                ><i class="fa fa-home"></i><span>Home</span></a
-              >
-            </li>
-            <li>
-              <a href="about.html"
-                ><i class="fa fa-user"></i><span>About</span></a
-              >
-            </li>
-            <li>
-              <a href="portfolio.html"
-                ><i class="fa fa-folder-open"></i><span>Portfolio</span></a
-              >
-            </li>
-            <li class="active">
-              <a href="contact.html"
-                ><i class="fa fa-envelope-open"></i><span>Contact</span></a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- Mobile Menu Ends -->
-    </header>
-    <!-- Header Ends -->
-    <!-- Page Title Starts -->
-    <section
-      class="
-        title-section
-        text-left text-sm-center
-        revealator-slideup revealator-once revealator-delay1
-      "
-    >
-      <h1>get in <span>touch</span></h1>
-      <span class="title-bg">contact</span>
-    </section>
-    <!-- Page Title Ends -->
-    <!-- Main Content Starts -->
-    <section
-      class="main-content revealator-slideup revealator-once revealator-delay1"
-    >
-      <div class="container">
-        <div class="row">
-          <!-- Left Side Starts -->
-          <div class="col-12 col-lg-4">
-            <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">
-              Let's Discuss!
-            </h3>
-            <p class="karla-font mb-3">
-              Feel free to get in touch with me. I am always open to discussing
-              new projects, creative ideas or opportunities to be part of your
-              visions.
-            </p>
-            <p class="karla-font custom-span-contact position-relative">
-              <i class="bx bxs-envelope position-absolute"></i>
-              <span class="d-block">mail me</span
-              ><a href="mailto:sanvicola2000@gmail.com"
-                >sanvicola2000@gmail.com</a
-              >
-            </p>
-            <p class="karla-font custom-span-contact position-relative">
-              <i class="bx bxs-phone position-absolute"></i>
-              <span class="d-block">call me</span
-              ><a href="tel:+2349131422492">+234 913 142 2492</a>
-            </p>
-            <ul class="social list-unstyled pt-1 mb-5">
-              <li class="facebook">
-                <a
-                  title="Facebook"
-                  href="https://www.facebook.com/victorolajuwon.sanusi.3"
-                  target="_blank"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-              </li>
-              <li class="twitter">
-                <a 
-                  title="Twitter" 
-                  href="https://twitter.com/developerBolu?s=09" 
-                  target="_blank"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li class="linkedin">
-                <a
-                  title="Linkedin"
-                  href="https://www.linkedin.com/in/sanusi-victor-5267a819a"
-                  target="_blank"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-              </li>
-              <li class="github">
-                <a
-                  title="Github"
-                  href="https://github.com/boluwatife2904"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <!-- Left Side Ends -->
-          <!-- Contact Form Starts -->
-          <div class="col-12 col-lg-8">
-            <form
-              class="contactform"
-              name="contact"
-              method="post"
-              data-netlify="true"
-              data-netlify-recaptcha="true"
-            >
-              <div class="contactform">
-                <div class="row">
-                  <div class="col-12 col-md-4">
-                    <label for="name">Your Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="How do I address you?"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-md-4">
-                    <label for="email">Your Email</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="How can I get in touch with you?"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-md-4">
-                    <label for="subject">Subject</label>
-                    <input
-                      type="text"
-                      name="subject"
-                      id="subject"
-                      placeholder="What are we discussing about?"
-                      required
-                    />
-                  </div>
-                  <div class="col-12">
-                    <label for="message">Your Message</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="Kindly provide more information about what You'd like me to help you with. Thanks."
-                      required
-                    ></textarea>
-                    <button type="submit" class="btn btn-contact">
-                      Get in Touch
-                    </button>
-                    <div
-                      data-netlify-recaptcha="true"
-                      class="captcha-div"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <!-- Contact Form Ends -->
-        </div>
-      </div>
-    </section>
-
-    <!--  JS Files -->
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.5.0.min.js"
-      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script> -->
-    <script src="js/jquery-3.5.0.min.js"></script>
-    <script src="js/preloader.min.js"></script>
-    <script src="js/fm.revealator.jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
+		<!--  JS Files -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/preloader.min.js"></script>
+		<script src="js/fm.revealator.jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
 </html>

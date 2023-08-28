@@ -86,7 +86,7 @@ hr.separator {
 /* Buttons */
 .btn {
   box-shadow: none !important;
-  border-radius: 30px;
+  border-radius: 6px;
   font-weight: 500;
   height: 52px;
   line-height: 52px;
@@ -261,7 +261,7 @@ hr.separator {
 }
 
 .home .bg {
-  background-image: url("../img/DSCN0077-110011.JPG");
+  background-image: url("../img/IMG_3385.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -271,6 +271,7 @@ hr.separator {
   left: 30px;
   top: 30px;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+  filter: grayscale();
 }
 
 .home .container-home {
@@ -308,6 +309,12 @@ hr.separator {
   margin: 10px 0 23px;
   font-size: 16px;
   line-height: 32px;
+  font-weight: 300;
+  color: #e2e2e2;
+}
+
+.home .home-details img {
+  object-fit: cover;
 }
 
 /*** About ***/
@@ -559,6 +566,10 @@ hr.separator {
   border-radius: 50%;
 }
 
+.contact p {
+  font-weight: 300;
+}
+
 /* Form */
 .contact .contactform input[type="text"],
 .contact .contactform input[type="email"],
@@ -649,6 +660,7 @@ hr.separator {
     border: 4px solid #252525;
     margin: 0 auto 25px;
     display: block;
+    object-fit: cover;
   }
 
   .home .home-details h1 {
